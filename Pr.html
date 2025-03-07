@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>pr agency - Qudrat Studio - Podcast Studio, Standup Recording, Photoshoot & PR Agency Services</title>
+    <link rel="shortcut icon" href="https://res.cloudinary.com/dslgstzex/image/upload/v1740658041/Simple_SV_Typographic_Logo_Logo_duyocz.png" type="image/x-icon">
+    <meta name="description" content="Qudrat Studio offers premium podcast studio rentals, standup comedy recording, professional photoshoots, and expert PR agency services to boost your brand visibility." />
+    <meta name="keywords" content="Podcast Studio Rental, Standup Recording Studio, Professional Photoshoots, PR Agency Services, Studio for Standup, Recording Studio for Podcasts, Media Production Studio, Branding and Public Relations, Photoshoot Studio Rental, Best PR Agency" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="custom.css">
+
+    <link rel="stylesheet" href="custom.css">
+    <style>
+      .tab-active {
+        border-top: 4px solid #6a00ff;
+        color: white;
+      }
+      .tab-btn{
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+      }
+      .tab-btn:hover{
+        background: gray    ;
+      }
+    </style>
+    <style>
+      .card {
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 8px;
+        padding: 2rem;
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      .card::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 35%;
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
+        pointer-events: none;
+      }
+      .card-image {
+        width: 40px;
+        height: 40px;
+        margin: 0 auto;
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+    </style>
+     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+     <style type="text/tailwindcss">
+         @theme {
+           --background-gradient: linear-gradient(90deg, #6a00ff, #b400ff);
+           --color-sec:#0096ff;
+         }
+       </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="bg-black text-white overflow-x-hidden">
+    <div id="navbar"></div>
+
+    <!-- hero  -->
+    <section class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6 min-h-screen items-center px-6 sm:px-8 py-10 sm:py-16">
+        <!-- Left Content -->
+        <div class="flex flex-col justify-center space-y-6 text-center md:text-left">
+          <div class="relative">
+            <svg class="absolute w-40 h-40 opacity-20 -top-10 -left-5 hidden md:block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+              <path fill="none" stroke="white" stroke-width="1" d="M100 20a80 80 0 1 0 0 160a80 80 0 1 0 0-160z"/>
+              <path fill="none" stroke="white" stroke-width="1" d="M100 30a70 70 0 1 0 0 140a70 70 0 1 0 0-140z"/>
+              <path fill="none" stroke="white" stroke-width="1" d="M100 40a60 60 0 1 0 0 120a60 60 0 1 0 0-120z"/>
+            </svg>
+            <h1 class="text-4xl sm:text-5xl md:text-7xl font-bold leading-tight">
+              It's Time To <br />Grow
+            </h1>
+          </div>
+          <div class="text-sm sm:text-xs text-gray-400 uppercase tracking-wider">Scroll</div>
+        </div>
+
+        <!-- Right Image -->
+        <div class="flex justify-center items-center">
+          <div class="w-full max-w-xs sm:max-w-md">
+            <img src="./img/hand.jpg" alt="PR agency" class="w-full h-auto rounded-lg shadow-lg"/>
+          </div>
+        </div>
+      </section>
+
+    <!-- services -->    <h1 class="text-7xl font-bold my-10">Target</h1>
+    <div class="relative w-full h-screen flex items-center justify-center px-4">
+        <div class="relative w-full h-full shadow-lg rounded-lg overflow-hidden">
+          <!-- Image Section -->
+          <div
+            id="imageSection"
+            class="relative w-full h-[70%] sm:h-[80%] bg-cover bg-center"
+            style="background-image: url('./img/11.jpg')"
+          >
+            <div class="blackfill absolute top-0 left-0 w-full h-full bg-black opacity-50"></div>
+            <div class="absolute inset-0 flex items-center justify-center px-4">
+              <div id="textSection" class="text-center text-white flex flex-col justify-center items-center">
+                <h2 class="text-3xl sm:text-5xl md:text-6xl font-bold leading-tight">
+                  Lead Generation
+                </h2>
+                <p class="mt-2 text-sm sm:text-base max-w-xs sm:max-w-md">
+                  We craft stories that captivate your audience and make your brand memorable.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tabs Section -->
+          <div class="bg-zinc-900 text-white overflow-x-auto">
+            <div class="flex min-w-[600px] sm:grid sm:grid-cols-5">
+              <button
+                class="tab-btn tab-active text-sm sm:text-xl py-4 sm:py-6 text-center font-semibold cursor-pointer flex-1"
+                onclick="changeTab(0)"
+              >
+                Lead Generation
+              </button>
+              <button
+                class="tab-btn text-sm sm:text-xl py-4 sm:py-6 text-center font-semibold cursor-pointer flex-1"
+                onclick="changeTab(1)"
+              >
+                Brand / Rebranding Visibility
+              </button>
+              <button
+                class="tab-btn text-sm sm:text-xl py-4 sm:py-6 text-center font-semibold cursor-pointer flex-1"
+                onclick="changeTab(2)"
+              >
+                Increase Traffic
+              </button>
+              <button
+                class="tab-btn text-sm sm:text-xl py-4 sm:py-6 text-center font-semibold cursor-pointer flex-1"
+                onclick="changeTab(3)"
+              >
+                Increase Sales
+              </button>
+              <button
+                class="tab-btn text-sm sm:text-xl py-4 sm:py-6 text-center font-semibold cursor-pointer flex-1"
+                onclick="changeTab(4)"
+              >
+                Conversion Optimization
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- how we work -->
+    <div class="flex items-center justify-center min-h-screen relative">
+        <div class="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px] -z-10"></div>
+      <section class="max-w-7xl mx-auto text-center px-4 z-10">
+        <div class="flex items-center justify-around w-full my-8 z-10 flex-col md:flex-row  ">
+          <h2 class="text-6xl font-bold uppercase mb-6 w-[80%]">HOW WE <span class="text-8xl  text-gradient">WORK</span></h2>
+          <p class="text-gray-300 text-sm max-w-2xl mx-auto mb-10 md:text-right">
+            Work with a team that only makes data-driven decisions. Launch
+            delightful user experiences that result in an engaged user base.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- Collaborative Card -->
+          <div
+            class="card collaborative bg-gradient-to-b from-transparent to-[#331400] z-10"
+          >
+            <div class="card-image text-2xl">
+              <i class="fa-solid fa-users-gear"></i> </div>
+              <div class="space-y-4">
+                <h3 class="text-xl font-semibold">Flexibility</h3>
+                <p class="text-gray-300 text-sm">
+                  We're always evaluating and evolving to create solutions that
+                  are scaleable and iterative.
+                </p>
+            </div>
+          </div>
+
+          <!-- Iterative Card -->
+          <div
+            class="card iterative bg-gradient-to-b from-transparent to-[#003319] z-10"
+          >
+            <div class="card-image text-2xl"><i class="fa-solid fa-fire"></i></div>
+            <div class="space-y-4">
+              <h3 class="text-xl font-semibold">Passion</h3>
+              <p class="text-gray-300 text-sm">
+                We're a group of individuals with a fiery desire to do amazing
+                work and to position and drive demand for your brand.
+              </p>
+            </div>
+          </div>
+
+          <!-- Flexible Card -->
+          <div
+            class="card flexible bg-gradient-to-b from-transparent to-[#001a33]"
+          >
+            <div class="card-image text-2xl">
+              <i class="fa-solid fa-people-group"></i>
+            </div>
+            <div class="space-y-4">
+              <h3 class="text-xl font-semibold">Positivity</h3>
+              <p class="text-gray-300 text-sm">
+                We know outlooks drive outcomes, that's why we always start from
+                a place of yes.
+              </p>
+            </div>
+          </div>
+
+          <!-- Data Driven Card -->
+          <div
+            class="card data-driven bg-gradient-to-b from-transparent to-[#290033]"
+          >
+            <div class="card-image text-2xl"><i class="fa-solid fa-shield"></i></div>
+            <div class="space-y-4">
+              <h3 class="text-xl font-semibold">Integrity</h3>
+              <p class="text-gray-300 text-sm">
+                We hold ourselves, our clients and our work to the highest
+                standards in execution and decorum.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section class="min-h-screen flex items-center justify-center text-center px-6 relative">
+        <div class="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_3px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] -z-1"></div>
+        <div class="max-w-5xl z-10">
+          <h1 class="text-5xl md:text-7xl font-extrabold leading-tight mb-6">
+            Join Us Now
+          </h1>
+          <p class="text-lg text-gray-400 mb-8">
+            Become part of our creative community at QUDRAT STUDIO. Let's collaborate, innovate, and grow together.
+          </p>
+          <a href="./contact.html" class="bg-gradient  text-white font-bold py-3 px-8 rounded-full text-lg transition duration-300">
+            Get Started
+          </a>
+        </div>
+      </section>
+
+      <div id="feq"></div>
+    <div id="footer"></div>
+
+    <script>
+      const tabData = [
+        {
+          title: " Lead Generation",
+          description:
+            "We craft stories that captivate your audience and make your brand memorable.",
+          image: "./img/11.jpg",
+        },
+        {
+          title: "Brand / Rebranding Visibility",
+          description:
+            "We connect your brand with top media outlets to gain valuable exposure.",
+          image: "./img/12.jpg",
+        },
+        {
+          title: " Increase Traffic",
+          description:
+            "We bridge the gap between your brand and influential celebrities to boost credibility.",
+          image: "./img/13.jpg",
+        },
+        {
+          title: " Increase sales",
+          description:
+            "We help you navigate crises with precision, protecting your brand's reputation.",
+          image: "./img/14.jpg",
+        },
+        {
+          title: "Conversion optimization",
+          description:
+            "We craft robust launch strategies that move the needle for your brand quickly.",
+          image: "./img/15.jpg",
+        },
+
+      ];
+
+      function changeTab(index) {
+        const textSection = document.getElementById("textSection");
+        const imageSection = document.getElementById("imageSection");
+        const buttons = document.querySelectorAll(".tab-btn");
+
+        // Update content
+        textSection.innerHTML = `
+            <h2 class="text-6xl font-bold">${tabData[index].title}</h2>
+            <p class="mt-2">${tabData[index].description}</p>
+        `;
+        imageSection.style.backgroundImage = `url('${tabData[index].image}')`;
+
+        // Update active tab
+        buttons.forEach((btn) => btn.classList.remove("tab-active"));
+        buttons[index].classList.add("tab-active");
+      }
+    </script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="./componentes.js"></script>
+    <script src="./aniamtion.js"></script>
+  </body>
+</html>

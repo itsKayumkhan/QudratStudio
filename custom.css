@@ -1,0 +1,37 @@
+body{
+    overflow-x: hidden;
+}
+
+.bg-gradient{
+    background:linear-gradient(90deg, #6a00ff, #b400ff);
+}
+.text-gradient {
+    background: linear-gradient(90deg, #6a00ff, #b400ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.gradient-underline {
+    display: inline-block;
+    position: relative;
+
+    cursor: pointer; /* Optional, to show it's interactive */
+}
+
+.gradient-underline::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px; /* Adjust position */
+    width: 0%; /* Start with no underline */
+    height: 8px; /* Thickness of underline */
+    background: linear-gradient(90deg, #6a00ff, #b400ff); /* Gradient */
+    transition: width 0.4s ease; /* Smooth animation */
+}
+
+.gradient-underline:hover::after {
+    width: 100%; /* Full width on hover */
+}
+
+#footer{
+    margin-top: 100px;
+}
