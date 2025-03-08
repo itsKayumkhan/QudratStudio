@@ -12,7 +12,7 @@ if (navbar) {
       </div>
 
       <!-- Desktop Menu (Hidden on Mobile) -->
-      <ul class="hidden md:flex space-x-6 text-white text-lg">
+      <ul class="hidden md:flex  text-white text-lg flex justify-between items-center gap-8">
         <li>
           <a href="./Pr.html" class="hover:text-gray-300">PR Services</a>
         </li>
@@ -34,21 +34,21 @@ if (navbar) {
       </ul>
 
       <!-- Social Icons (Always visible) -->
-      <div class="hidden md:flex space-x-3">
+      <div class="hidden md:flex gap-4">
         <a
-          href="#"
+          href="https://www.facebook.com/profile.php?id=61573980805943"
           class="social-icon w-8 h-8 flex items-center justify-center  bg-gradient bg-opacity-30 rounded-full text-white hover:bg-opacity-50"
         >
           <i class="fab fa-facebook-f"></i>
         </a>
         <a
-          href="#"
+          href="https://www.youtube.com/@QudratStudio"
           class="social-icon w-8 h-8 flex items-center justify-center  bg-gradient bg-opacity-30 rounded-full text-white hover:bg-opacity-50"
         >
-          <i class="fab fa-dribbble"></i>
+         <i class="fa-brands fa-youtube"></i>
         </a>
         <a
-          href="#"
+          href="https://www.instagram.com/qudra_tstudio/?hl=en"
           class="social-icon w-8 h-8 flex items-center justify-center  bg-gradient bg-opacity-30 rounded-full text-white hover:bg-opacity-50"
         >
           <i class="fab fa-instagram"></i>
@@ -92,19 +92,19 @@ if (navbar) {
         <!-- Social Icons (for mobile) -->
         <div class="flex space-x-3 pt-4">
           <a
-            href="#"
+            href="https://www.facebook.com/profile.php?id=61573980805943"
             class="social-icon w-8 h-8 flex items-center justify-center bg-gray-500 bg-opacity-30 rounded-full text-white hover:bg-opacity-50"
           >
             <i class="fab fa-facebook-f"></i>
           </a>
           <a
-            href="#"
+            href="https://www.youtube.com/@QudratStudio"
             class="social-icon w-8 h-8 flex items-center justify-center bg-gray-500 bg-opacity-30 rounded-full text-white hover:bg-opacity-50"
           >
-            <i class="fab fa-dribbble"></i>
+            <i class="fa-brands fa-youtube"></i>
           </a>
           <a
-            href="#"
+            href="https://www.instagram.com/qudra_tstudio/?hl=en"
             class="social-icon w-8 h-8 flex items-center justify-center bg-gray-500 bg-opacity-30 rounded-full text-white hover:bg-opacity-50"
           >
             <i class="fab fa-instagram"></i>
@@ -124,9 +124,7 @@ if (footerContainer) {
     <div id="marq"></div>
 
         <div class="bg-black text-white relative">
-    <h1 class="hidden md:block font-bold md:text-9xl scale-y-150 opacity-25 p-8 absolute bottom-16 left-8 z-0 data-gsap-bg-text">
-        QUDRAT STUDIO
-    </h1>
+
 
     <!-- Header Section (Work With Us) -->
     <div class="flex flex-col md:flex-row justify-between items-center p-6 md:p-10 space-y-4 md:space-y-0 border-b border-gray-800 data-gsap-header">
@@ -149,11 +147,11 @@ if (footerContainer) {
             <p class="text-gray-300 text-base md:text-lg leading-relaxed">
                 Feel free to reach out if you want to collaborate with us, or simply have a chat.
             </p>
-            <div class="flex justify-center md:justify-start space-x-6">
-                <a href="#" class="text-gray-400 hover:text-white text-2xl"><i class="fab fa-facebook"></i></a>
+            <div class="flex justify-center md:justify-start gap-3  ">
+                <a href="https://www.facebook.com/profile.php?id=61573980805943" class="text-gray-400 hover:text-white text-2xl"><i class="fab fa-facebook"></i></a>
                 <a href="#" class="text-gray-400 hover:text-white text-2xl"><i class="fa-brands fa-youtube"></i></a>
                 <a href="#" class="text-gray-400 hover:text-white text-2xl"><i class="fa-brands fa-x-twitter"></i></a>
-                <a href="#" class="text-gray-400 hover:text-white text-2xl"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.instagram.com/qudra_tstudio/?hl=en" class="text-gray-400 hover:text-white text-2xl"><i class="fab fa-instagram"></i></a>
             </div>
         </div>
 
@@ -315,7 +313,7 @@ if (contactBar) {
 const fandq = document?.getElementById("feq");
 if (fandq) {
   fandq.innerHTML = `
-  <div class="flex justify-center items-center relative faq-container h-screen w-full">
+  <div class="flex justify-center items-center relative faq-container h-screen w-full bg-[#1a181f]">
   <div class="absolute top-10 left-36 z-1 hidden md:block">
         <svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="white" stroke-width="2">
             <path d="M32 2 C34 16, 48 30, 62 32 C48 34, 34 48, 32 62 C30 48, 16 34, 2 32 C16 30, 30 16, 32 2 Z" />

@@ -64,9 +64,16 @@ function initGSAPAnimations() {
   });
 
   // Pop Up Animation for SVG Logo
-  gsap.from(".absolute svg", {
+  gsap.from("svg", {
     scale: 0,
     opacity: 0,
+    duration: 1,
+    ease: "back.out(1.7)",
+  });
+  gsap.from(" .hero-text", {
+    scale: 0,
+    opacity: 0,
+    stagger: 0.2,
     duration: 1,
     ease: "back.out(1.7)",
   });
@@ -345,6 +352,22 @@ gsap.from('.data-gsap-footer', {
         start: 'top 100%',
         toggleActions: 'play none none reverse'
     }})
+
+
+//pr servies
+
+gsap.from(".section", {
+    opacity: 0,
+    y: 100,
+    duration: 1,
+    stagger: 0.3,
+    ease: "power2.out",
+    scrollTrigger: {
+        trigger: ".section",
+        start: "top 80%",
+        toggleActions: "play none none reverse"
+    }
+});
 
 }
 

@@ -3,11 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>podcast - Qudrat Studio - Podcast Studio, Standup Recording, Photoshoot & PR Agency Services</title>
-    <link rel="shortcut icon" href="https://res.cloudinary.com/dslgstzex/image/upload/v1740658041/Simple_SV_Typographic_Logo_Logo_duyocz.png" type="image/x-icon">
-    <meta name="description" content="Qudrat Studio offers premium podcast studio rentals, standup comedy recording, professional photoshoots, and expert PR agency services to boost your brand visibility." />
-    <meta name="keywords" content="Podcast Studio Rental, Standup Recording Studio, Professional Photoshoots, PR Agency Services, Studio for Standup, Recording Studio for Podcasts, Media Production Studio, Branding and Public Relations, Photoshoot Studio Rental, Best PR Agency" />
-<link rel="stylesheet" href="custom.css">
+    <title>
+      podcast - Qudrat Studio - Podcast Studio, Standup Recording, Photoshoot &
+      PR Agency Services
+    </title>
+    <link
+      rel="shortcut icon"
+      href="https://res.cloudinary.com/dslgstzex/image/upload/v1740658041/Simple_SV_Typographic_Logo_Logo_duyocz.png"
+      type="image/x-icon"
+    />
+    <meta
+      name="description"
+      content="Qudrat Studio offers premium podcast studio rentals, standup comedy recording, professional photoshoots, and expert PR agency services to boost your brand visibility."
+    />
+    <meta
+      name="keywords"
+      content="Podcast Studio Rental, Standup Recording Studio, Professional Photoshoots, PR Agency Services, Studio for Standup, Recording Studio for Podcasts, Media Production Studio, Branding and Public Relations, Photoshoot Studio Rental, Best PR Agency"
+    />
+    <link rel="stylesheet" href="./css/custom.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link
       rel="stylesheet"
@@ -22,70 +35,78 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
       }
-
     </style>
-     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-     <style type="text/tailwindcss">
-         @theme {
-           --background-gradient: linear-gradient(90deg, #6a00ff, #b400ff);
-           --color-sec:#0096ff;
-         }
-       </style>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @theme {
+        --background-gradient: linear-gradient(90deg, #6a00ff, #b400ff);
+        --color-sec: #0096ff;
+      }
+    </style>
   </head>
   <body class="bg-black text-white overflow-x-hidden">
     <div id="navbar"></div>
 
     <!-- hero  -->
 
-    <section
-      class="grid grid-cols-1 md:grid-cols-2 gap-0 min-h-screen items-center px-8 py-16 md:py-10"
+    <div
+      class="relative w-full h-screen flex items-end justify-start text-center"
     >
-      <!-- Left Content -->
-      <div class="flex flex-col justify-center space-y-6">
-        <div class="relative">
-          <svg
-            class="absolute w-52 h-52 opacity-20 -top-20 -left-10 hidden md:block"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 200 200"
+      <!-- Background Image -->
+      <div
+        class="absolute inset-0 bg-cover bg-center"
+        style="background-image: url('./img/podcast-hero.jpg')"
+      ></div>
+
+      <!-- Black Overlay -->
+      <div class="absolute inset-0 bg-black opacity-80"></div>
+
+      <div
+        class="relative z-10 w-full px-4 md:px-12 md:flex md:justify-between"
+      >
+        <h1
+          class="text-7xl md:text-[12rem] font-bold leading-tight mb-6 text-white relative hero-text"
+        >
+          <span
+            class="text-xl md:text-5xl left-0 font-light block md:absolute md:top-0 text-gray-300"
           >
-            <path
-              fill="none"
-              stroke="white"
-              stroke-width="1"
-              d="M100 20a80 80 0 1 0 0 160a80 80 0 1 0 0-160z"
-            />
-            <path
-              fill="none"
-              stroke="white"
-              stroke-width="1"
-              d="M100 30a70 70 0 1 0 0 140a70 70 0 1 0 0-140z"
-            />
-            <path
-              fill="none"
-              stroke="white"
-              stroke-width="1"
-              d="M100 40a60 60 0 1 0 0 120a60 60 0 1 0 0-120z"
-            />
-          </svg>
-          <h1 class="text-5xl md:text-7xl font-bold leading-tight">
-            Listen <br />New Podcast
-          </h1>
-        </div>
+            Listen New
+          </span>
+          Podcast
+        </h1>
 
-        <div class="text-xs text-gray-400 uppercase tracking-wider">Scroll</div>
-      </div>
-
-      <!-- Right Image -->
-      <div class="flex justify-center items-center">
-        <div class="w-full max-w-md">
+        <!-- Rotated Image (Brand Image) -->
+        <!-- <div class="flex justify-center mb-6">
           <img
-            src="./img/podhome.jpg"
-            alt="Photographer"
-            class=""
+            src="z"
+            alt="Brand Image"
+            class="rotate-6 w-20 md:w-40 shadow-lg"
           />
+        </div> -->
+
+        <!-- Social Media Links & Description Text (Increased Text Size) -->
+        <div class="space-y-6 text-sm md:text-lg text-gray-300">
+          <div class="flex justify-center space-x-4">
+            <a
+              href="https://www.instagram.com/qudra_tstudio/?hl=en"
+              class="w-10 h-10 bg-gray-800 flex items-center justify-center rounded-full hover:scale-110 duration-300"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a
+              href="https://www.youtube.com/@QudratStudio"
+              class="w-10 h-10 bg-gray-800 flex items-center justify-center rounded-full hover:scale-110 duration-300"
+            >
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+          </div>
+          <p class="max-w-sm mx-auto text-base md:text-lg">
+            We craft powerful brand experiences that connect businesses with
+            their audience.
+          </p>
         </div>
       </div>
-    </section>
+    </div>
     <!-- podcast -->
     <!-- <div class="min-h-screen flex items-center justify-center relative z-10">
         <div class="absolute top-0 left-9 rotate-[-49deg] -z-1 opacity-50"><svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" clip-rule="evenodd" d="M200 150H143.75C143.75 125.838 124.162 106.25 100 106.25C75.8375 106.25 56.25 125.838 56.25 150H0C0 94.7715 44.7715 50 100 50C155.228 50 200 94.7715 200 150Z" fill="url(#paint0_linear_104_144)"/> <defs> <linearGradient id="paint0_linear_104_144" x1="100" y1="50" x2="100" y2="150" gradientUnits="userSpaceOnUse"> <stop stop-color="#A7B5FF"/> <stop offset="1" stop-color="#F3ACFF"/> </linearGradient> </defs> </svg></div>
@@ -213,7 +234,7 @@
         </div>
       </div>
     </div> -->
-  <!-- <div id="soon" class="relative"></div> -->
+    <!-- <div id="soon" class="relative"></div> -->
 
     <!-- reach out -->
     <div class="min-h-screen flex items-center justify-center">
@@ -234,20 +255,20 @@
             href="#"
             class="flex items-center gap-2 px-6 py-3 border border-gray-500 text-white rounded-full hover:bg-white hover:text-gray-900 transition"
           >
-            Get Started <span><i class="fa-solid fa-arrow-right -rotate-[35DEG]"></i></span>
+            Get Started
+            <span><i class="fa-solid fa-arrow-right -rotate-[35DEG]"></i></span>
           </a>
-
         </div>
       </div>
     </div>
     <div id="contact"></div>
     <div id="feq"></div>
-<div id="marq"></div>
+    <div id="marq"></div>
 
     <div id="footer"></div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <script src="./componentes.js"></script>
-    <script src="./aniamtion.js"></script>
+    <script src="./js/componentes.js"></script>
+    <script src="./js/aniamtion.js"></script>
   </body>
 </html>
