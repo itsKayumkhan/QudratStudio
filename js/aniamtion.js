@@ -369,6 +369,21 @@ gsap.from(".section", {
     }
 });
 
+//photoshoot servies
+gsap.to(".photo-service", {
+    opacity: 1,
+    y: 0,
+    duration: 1,
+    ease: "power2.out",
+    stagger: 0.2, // Stagger effect
+    scrollTrigger: {
+        trigger: servicesContainer,
+        start: "top 80%", // Starts when services section enters viewport
+        end: "top 50%",
+        scrub: 1
+    }
+});
+
 }
 
 // Only run animations on desktop
