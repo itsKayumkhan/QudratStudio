@@ -73,13 +73,13 @@ if (navbar) {
         </li>
         <li>
           <a href="./podcast.html" class="block hover:text-gray-300"
-            >Podcast</a
+            >Podcast / Standup</a
           >
         </li>
 
         <li>
           <a href="./standup.html" class="block hover:text-gray-300"
-            >Standup</a
+            > </a
           >
         </li>
         <li>

@@ -106,25 +106,6 @@ function initGSAPAnimations() {
     delay: 1,
   });
 
-  // // Stagger Animation for Bottom Social Icons
-  // gsap.from(".absolute.bottom-8.right-8 a", {
-  //   opacity: 0,
-  //   y: 20,
-  //   duration: 0.8,
-  //   ease: "power2.out",
-  //   stagger: 0.3,
-  //   delay: 1.5,
-  // });
-
-  // // Fade in Description Text
-  // gsap.from(".absolute.bottom-8.right-8 p", {
-  //   opacity: 0,
-  //   y: 20,
-  //   duration: 1,
-  //   ease: "power2.out",
-  //   delay: 1.8,
-  // });
-
   // Section animations with ScrollTrigger
   const sections = [".who_we_are", ".our_services", ".our_project"];
 
@@ -188,7 +169,7 @@ function initGSAPAnimations() {
   document.querySelectorAll(".ser").forEach((section) => {
     gsap.from(section, {
         opacity: 0,
-        x:  -200,
+        scale: 110,
         duration: 1,
         ease: "power2.out",
         scrollTrigger: {
@@ -198,6 +179,34 @@ function initGSAPAnimations() {
             scrub: true,
         }
     });
+});
+const services = document.querySelectorAll('.ser');
+    
+services.forEach(service => {
+  const images = service.querySelectorAll('img');
+  
+  // Loop through each service and add hover effect
+  service.addEventListener('mouseenter', () => {
+    // Animate the images on hover (scale and move them)
+    gsap.to(images, {
+      scale: 1.1,       // Slightly increase size
+      y: -10,           // Move upwards
+      opacity: .5,       // Make images fully visible
+      duration: 0.5,    // Duration of the animation
+      ease: 'power2.out' // Ease for a smooth transition
+    });
+  });
+
+  service.addEventListener('mouseleave', () => {
+    // Animate the images back to their original state with scale 0 (shrink to nothing)
+    gsap.to(images, {
+      scale: 0,         // Shrink to zero
+      y: 0,             // Reset position
+      opacity: 0,       // Fade out
+      duration: 0.5,    // Duration of the animation
+      ease: 'power2.out' // Smooth transition
+    });
+  });
 });
 document.querySelectorAll(".team-img").forEach((section) => {
     gsap.from(section, {

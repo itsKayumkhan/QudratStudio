@@ -3,6 +3,10 @@ body{
     overflow-x: hidden;
 
 }
+@theme {
+    --background-gradient: linear-gradient(90deg, #6a00ff, #b400ff);
+    --color-sec: #0096ff;
+  }
 
 /* Scrollbar for WebKit browsers (Chrome, Safari, Edge) */
 ::-webkit-scrollbar {
@@ -93,4 +97,7 @@ svg:hover{
 .photo-service:hover{
     background: linear-gradient(90deg, #6a00ff, #b400ff);
 
+}
+.outline-text {
+    -webkit-text-stroke: 1px black;
 }
